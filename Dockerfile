@@ -39,4 +39,5 @@ RUN apt install -y python3-pip
 RUN rm /usr/bin/lsb_release
 RUN python3.6 -m pip install --upgrade pip
 
-ENTRYPOINT ["/usr/bin/bash", "-i"]
+#ENTRYPOINT ["/usr/bin/bash", "-i"]
+CMD ["/usr/bin/bash"]
