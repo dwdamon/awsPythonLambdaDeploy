@@ -37,6 +37,6 @@ RUN cd Python-3.9.13 && bash ./configure --enable-optimizations && make altinsta
 RUN update-alternatives --install /usr/bin/python3 python3 /usr/local/bin/python3.9 0
 RUN apt install -y python3-pip
 RUN rm /usr/bin/lsb_release
-RUN python3.6 -m pip install --upgrade pip
+RUN python3.9 -m pip install --upgrade pip
 
 CMD ["/usr/bin/bash"]
