@@ -28,7 +28,7 @@ RUN npm install -g serverless
 
 #install python 3.9
 RUN apt install -y build-essential checkinstall
-RUN apt install -y libreadline-gplv2-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev libffi-dev zlib1g-dev
+RUN apt install -y libreadline-dev libncursesw5-dev libssl-dev libsqlite3-dev tk-dev libgdbm-dev libc6-dev libbz2-dev libffi-dev zlib1g-dev
 RUN cd /opt
 RUN apt install -y wget
 RUN wget https://www.python.org/ftp/python/3.9.13/Python-3.9.13.tgz
